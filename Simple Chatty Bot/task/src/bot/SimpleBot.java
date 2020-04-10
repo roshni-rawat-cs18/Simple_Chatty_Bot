@@ -26,5 +26,15 @@ public class SimpleBot {
         System.out.print(yourAge + ";");
         System.out.println("that's a good time to start programming!");
 
+
+        int num = scanner.nextInt();
+        for (int i = 0; i <= num; i++) {
+            System.out.printf("%d!\n", i);
+
+        }
+        System.out.println("Completed, have a nice day!"); // Do not change this text
+
+
+        //read a number and count to it herr
     }
 }
