@@ -1,11 +1,30 @@
 package bot;
 
+import java.util.Scanner;
+
 public class SimpleBot {
     public static void main(String[] args) {
-        System.out.println("Hello! My name is Roshni");
-        System.out.println("I was created in 2000");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hello! My name is Aid.");
+        System.out.println("I was created in 2018.");
+        System.out.println("Please, remind me your name.");
 
+        // reading a name
+        String yourName = scanner.nextLine();
+        System.out.print("What a great name you have," + " ");
+        System.out.println(yourName + "!");
+        System.out.println("Let me guess your age.");
+        System.out.println("Enter remainders of dividing your age by 3, 5 and 7.");
 
-        // write your code here
+        // reading all remainders
+        int rem3 = scanner.nextInt();
+        int rem5 = scanner.nextInt();
+        int rem7 = scanner.nextInt();
+        int yourAge = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;
+
+        System.out.print("Your age is" + " ");
+        System.out.print(yourAge + ";");
+        System.out.println("that's a good time to start programming!");
+
     }
 }
